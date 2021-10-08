@@ -1,4 +1,5 @@
-const upBtn = document.querySelector('.up-button')
+/*const upBtn = document.querySelector('.up-button')
+
 const downBtn = document.querySelector('.down-button')
 
 const sidebar = document.querySelector('.sidebar')
@@ -56,4 +57,19 @@ function checkScrollDirectionIsUp(event) {
     return event.wheelDelta > 0;
   }
   return event.deltaY < 0;
-}
+}*/
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+   loop: true,
+
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});

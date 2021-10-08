@@ -2,7 +2,7 @@
 .header{
     display: flex;
     height: 80px;
-    position: fixed;
+    
     top: 0;
     z-index: 1;
     width: 100%;
@@ -18,6 +18,7 @@
 .header__logo img{
     max-width: 100%;
     object-fit: cover;
+    height: 100%;
 }
 .menu-list{
     display: flex;
@@ -80,8 +81,7 @@ body {
 .container {
   position: relative;
   overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+
 }
 
 .sidebar {
@@ -180,4 +180,97 @@ button:focus {
   transform: translateY(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.swiper {
+  width: 100%;
+  height: 66vh;
+}
+.background-pic{
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+} 
+
+.swiper-button-next{
+  right: 25px;
+}
+.main-screen-title {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main-screen-title__h1 {
+  text-shadow: 0 0 18px rgb(0 0 0 / 95%);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.main-screen-title__caption {
+  max-width: 720px;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.46;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  text-shadow: 0 0 18px rgb(0 0 0 / 95%);
+}
+.first-screen-info{
+  display: flex;
+  max-width: 1250px;
+  margin: 40px auto;
+}
+.first-screen-item{
+  width: 33%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.first-screen-item__pic{
+  max-width: 100%;
+  width: 50%;
+}
+.first-screen-item__title{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.navigate-bar{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(./images/WallpaperDog-11035567.jpg);
+  background-size: cover;
+  margin-bottom: 100px;
+}
+.navigate-bar-list{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer{
+  height: 200px;
+}
+.navigate-bar-item{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
 }
